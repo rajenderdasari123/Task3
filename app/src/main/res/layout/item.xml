@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>
+
+    <RelativeLayout
+        android:id="@+id/leftlayout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rightlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/leftlayout">
+
+
+        <TextView
+            android:id="@+id/idtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Id"
+            android:textColor="#EA6F1E" />
+
+        <TextView
+            android:id="@+id/categoryNametext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idtext"
+            android:layout_marginLeft="20dp"
+            android:text="categoryNametext"
+            android:textColor="#EA6F1E" />
+
+        <TextView
+            android:id="@+id/captiontext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/categoryNametext"
+            android:layout_marginLeft="20dp"
+            android:text="captiontext"
+            android:textColor="#EA6F1E" />
+
+        <TextView
+            android:id="@+id/orientationtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/captiontext"
+            android:layout_marginLeft="20dp"
+            android:text="orientationtext"
+            android:textColor="#EA6F1E" />
+
+        <TextView
+            android:id="@+id/platformtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orientationtext"
+            android:layout_marginLeft="20dp"
+            android:text="platformtext"
+            android:textColor="#EA6F1E" />
+    </RelativeLayout>
+
+</RelativeLayout>
